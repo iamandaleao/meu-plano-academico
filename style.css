@@ -1,0 +1,120 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.semestres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.semestre {
+  background: #fff;
+  text-decoration: none;
+  color: #000;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.semestre:hover {
+  transform: scale(1.03);
+}
+.semestre1 {
+  background-color: #e3f2fd;
+}
+.semestre2 {
+  background-color: #e8f5e9;
+}
+.semestre3 {
+  background-color: #fff3e0;
+}
+.semestre4 {
+  background-color: #fce4ec;
+}
+.semestre5 {
+  background-color: #ede7f6;
+}
+.materias,
+.materia {
+  margin-top: 1rem;
+}
+.materia {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+input,
+textarea {
+  width: 100%;
+  margin: 0.3rem 0 1rem;
+  padding: 0.4rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+button {
+  background: #007bff7b;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0057b3a8;
+}
+.checkbox-group {
+  margin-top: 10px;
+  display: grid;
+  gap: 2px;
+}
+.resultado {
+  font-weight: bold;
+  color: green;
+}
+.voltar {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: #007bffc3;
+  font-weight: bold;
+}
+.voltar:hover {
+  text-decoration: underline;
+}
+.form-adicionar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.form-adicionar input {
+  flex: 1;
+  max-width: 400px;
+}
+.materia h3 {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+.materia-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+.materia-content {
+  display: none;
+  margin-top: 1rem;
+}

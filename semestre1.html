@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>1º Semestre</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1000px;
+        text-align: center;
+      }
+
+      .voltar {
+        display: inline-block;
+        margin: 20px;
+        text-decoration: none;
+        color: #007bff;
+      }
+
+      .form-adicionar {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* garante alinhamento vertical */
+        gap: 0; /* sem espaçamento extra */
+      }
+
+      .form-adicionar input,
+      .form-adicionar button {
+        height: 38px;
+        font-size: 16px;
+        line-height: 1; /* importante para alinhar texto verticalmente */
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin: 0; /* remove margens */
+        outline: none;
+        font-family: Arial, sans-serif; /* padroniza fonte */
+      }
+
+      .form-adicionar input {
+        width: 400px;
+        border-radius: 4px 0 0 4px;
+        border-right: none; /* une visualmente com o botão */
+      }
+
+      .form-adicionar button {
+        background-color: #007bff;
+        border: 1px solid #007bff;
+        border-radius: 0 4px 4px 0;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        border-left: none;
+        line-height: 1; /* alinhamento vertical */
+        display: flex; /* para centralizar texto no botão */
+        align-items: center; /* centraliza texto no botão verticalmente */
+        justify-content: center; /* centraliza texto horizontalmente */
+      }
+
+      .listas-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .coluna {
+        flex: 1;
+        min-width: 300px;
+        max-width: 450px;
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+      }
+
+      .coluna h2 {
+        margin-top: 0;
+      }
+
+      h3 {
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .materia-content input{
+        width: 200px;
+      }
+      .materias {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .materia-item {
+        padding: 10px;
+        background: #e9ecef;
+        border-radius: 5px;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .materia-actions {
+        margin-top: 10px;
+      }
+
+      .materia-actions button {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="voltar">← Voltar</a>
+      <h1>1º Semestre</h1>
+
+      <form onsubmit="addMateria(event, 1)" class="form-adicionar">
+        <input type="text" placeholder="Nova matéria" required />
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <div class="listas-container">
+        <div class="coluna">
+          <h2>Em andamento</h2>
+          <div class="materias" id="materias-andamento"></div>
+        </div>
+        <div class="coluna">
+          <h2>Concluídas</h2>
+          <div class="materias" id="materias-concluidas"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
