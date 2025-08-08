@@ -1,4 +1,4 @@
-# 📚 FaculTrack - Organizador de Semestres e Matérias para Universitários
+# 📚 Organizador de Semestres e Matérias para Universitários
 
 FaculTrack é um projeto pessoal desenvolvido para ajudar estudantes a organizarem seus semestres acadêmicos de forma prática. Com ele, é possível adicionar matérias, definir datas de início e término do semestre, acompanhar tarefas, calcular médias e escrever observações — tudo salvo automaticamente no navegador por meio do Local Storage.
 
